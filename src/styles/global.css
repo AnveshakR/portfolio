@@ -1,0 +1,28 @@
+body {
+    background-color: #1C1C1C; /* Dark gray */
+    color: #d1d5de; /* Off-white */
+    }
+
+a {
+    color: #b76d68; /* Indian red */
+}
+a:hover {
+    color: #eff1f3
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #d1d5de; /* French gray */
+}
+
+.button {
+    background-color: #b76d68; /* Indian red */
+    color: #d1d5de; /* Off-white */
+}
+
+p {
+    color: #eff1f3
+}
+  
+table, td {
+    color: #eff1f3; /* Ensuring white text color for table cells */
+  }

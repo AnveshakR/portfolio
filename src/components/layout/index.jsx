@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/global.css';
 
 const classes = {
   wrapper: 'p-8 relative max-w-screen-xl xs:p-24',

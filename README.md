@@ -15,7 +15,7 @@ Some of the features include:
 - Extend and Customize as Needed
 - Blazing Fast 🙄
 
-**[Need help with the template or have suggestions? Reach out on Twitter anytime!](https://twitter.com/rfitzio)**
+**[Need help with the template or have suggestions? Reach out on bluesky anytime!](https://bsky.app/profile/rfitzio)**
 
 ## Demo
 
@@ -50,7 +50,7 @@ To get started, either fork or clone the repo. Next, open `gatsby-config.js` whi
 | `name`        | Your name                    | Yes      |
 | `title`       | The title of your site       | Yes      |
 | `description` | The description of your site | Yes      |
-| `author`      | Your Twitter Handle          | No       |
+| `author`      | Your bluesky Handle          | No       |
 | `github`      | Your GitHub Profile URL      | No       |
 | `linkedin`    | Your LinkedIn Profile URL    | No       |
 

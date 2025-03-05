@@ -1,75 +1,94 @@
 module.exports = {
   siteMetadata: {
-    // Site URL for when it goes live
-    siteUrl: `https://monumental-chimera-b1ace3.netlify.app/`,
-    // Your Name
-    name: 'Ryan Fitzgerald',
-    // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
-    // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
-    // Optional: Twitter account handle
-    author: `@rfitzio`,
-    // Optional: Github account URL
-    github: `https://github.com/RyanFitzgerald`,
-    // Optional: LinkedIn account URL
-    linkedin: `https://github.com/RyanFitzgerald/devfolio`,
-    // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+  
+    siteUrl: `https://anveshakr.com/`,
+  
+    name: 'Anveshak Rathore',
+    
+    title: `Anveshak Rathore | AI/ML Engineer`,
+    
+    description: `AI/ML Engineer based out of Chicago, building impactful end-to-end AI solutions.`,
+    
+    author: `anveshakr.com`,
+    
+    github: `https://github.com/anveshakr`,
+    
+    linkedin: `https://linkedin.com/in/anveshak-rathore`,
+    
+    about: `I'm an AI engineer with a strong foundation in research and hands-on industry experience, specializing in the development and deployment of innovative AI applications and products. Outside of work, I am passionate about creating impactful projects that streamline processes and enhance efficiency, allowing individuals and teams to focus on high-level goals while reducing time spent on repetitive tasks.`,
+    
     projects: [
       {
-        name: 'Devfolio',
+        name: 'Home Assistant AI',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Custom home automation assistant using LangChain toolchains with STT and TTT.',
+        link: 'https://github.com/AnveshakR/homeassistant-AI',
       },
       {
-        name: 'ExtensionKit',
+        name: 'Breast Cancer Prediction from Mammograms',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://extensionkit.io/?ref=devfolio',
+          'Detecting cancer tumors in mammogram DICOM images using autoencoders, mitigating negative class bias.',
+        link: 'https://github.com/AnveshakR/Breast-Cancer-Prediction',
       },
       {
-        name: 'Another Cool Project',
+        name: 'Spotify Poster Generator',
         description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'Generate custom Spotify album posters with a color bar derived from the album art colors.',
+        link: 'https://github.com/AnveshakR/poster-generator',
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    // `name` and `description` mandatory. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'iManage',
+        description: 'Machine Learning Engineer | Jan 2025 - Present\n\
+                      Data Scientist | Oct 2024 - Jan 2025\n\
+                      Data Science Intern | May 2023 - Aug 2023',
+        link: 'https://www.linkedin.com/company/4526/',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'University of Massachusetts, Lowell',
+        description: 'Research Assistant | Jan 2024 - May 2024\n\
+                      Graduate Teaching Assistant | Aug 2023 - Dec 2023\n\
+                      Graduate Teaching Assistant | Jan 2023 - May 2023',
+        link: 'https://www.linkedin.com/company/9916/',
       },
       {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Veermata Jijabai Technological Institute',
+        description: 'AI Intern at CoE-CNDS | Jun 2021 - Sep 2021',
+        link: 'https://www.linkedin.com/school/veermata-jijabai-technological-institute/',
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+    education: [
+      {
+        name: 'University of Massachusetts, Lowell',
+        description: "Master of Science (MS) - Computer Science\n\
+                      2022 - 2024\n\
+                      3.6 CGPA",
+        link: 'https://www.linkedin.com/school/university-of-massachusetts-lowell/'
+      },
+      {
+        name: 'Veermata Jijabai Technological Institute, Mumbai',
+        description: "Bachelor of Technology (B.Tech) - Electronics Engineering\n\
+                      2018 - 2022",
+        link: 'https://www.linkedin.com/school/veermata-jijabai-technological-institute/',
+      }
+    ],
+    // `name` and `description` mandatory
     skills: [
       {
         name: 'Languages & Frameworks',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'Python, C, C++, Java, Arduino, SQL, Bash, PowerShell, Rust',
       },
       {
-        name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        name: 'Applications',
+        description: 'PyTorch, Machine Learning, LLM fine tuning, LangChain',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Docker, MS Azure Suite, Power BI, Agile/Scrum, Google Cloud Platform',
       },
     ],
   },
@@ -190,8 +209,8 @@ module.exports = {
         name: `devfolio`,
         short_name: `devfolio`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
+        background_color: `#1f3333`,
+        theme_color: `#38040e`, // This color appears on mobile
         display: `minimal-ui`,
         icon: `src/images/icon.png`,
       },

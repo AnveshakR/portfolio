@@ -46,19 +46,19 @@ const SEO = ({ description, lang, meta, title }) => {
           content: `website`,
         },
         {
-          property: `twitter:card`,
+          property: `bluesky:card`,
           content: `summary`,
         },
         {
-          property: `twitter:creator`,
+          property: `bluesky:creator`,
           content: site.siteMetadata?.author || ``,
         },
         {
-          property: `twitter:title`,
+          property: `bluesky:title`,
           content: finalTitle,
         },
         {
-          property: `twitter:description`,
+          property: `bluesky:description`,
           content: metaDescription,
         },
       ].concat(meta)}
