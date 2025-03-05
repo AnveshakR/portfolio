@@ -71,6 +71,15 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
+          <li className={classes.item}>
+            <a
+              className={classes.link}
+              href={`https://drive.google.com/uc?export=download&id=${process.env.GATSBY_RESUME_ID}`}
+              download
+            >
+              Resume
+            </a>
+          </li>
         </ul>
       </div>
     </div>
