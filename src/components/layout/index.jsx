@@ -26,21 +26,21 @@ const Layout = ({ children }) => {
             height="20"
             patternUnits="userSpaceOnUse"
           >
-            <rect
+            {/* <rect
               x="0"
               y="0"
               width="4"
               height="4"
               className="text-gray-200"
               fill="#edf2f7"
-            />
+            /> */}
           </pattern>
         </defs>
-        <rect
+        {/* <rect
           width="404"
           height="784"
           fill="url(#5d0dd344-b041-4d26-bec4-8d33ea57ec9b)"
-        />
+        /> */}
       </svg>
       <div className={classes.wrapper}>{children}</div>
     </div>
