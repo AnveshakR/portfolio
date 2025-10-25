@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anveshak Rathore</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            color: #ff0000;
+            font-family: 'Courier New', monospace;
+            line-height: 1.6;
+        }
+        .layout {
+            display: flex;
+            min-height: 100vh;
+        }
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            height: 100vh;
+            background: #0a0a0a;
+            padding: 40px 20px;
+            border-right: 1px solid #ff0000;
+            overflow-y: auto;
+        }
+        .sidebar-title {
+            font-size: 18px;
+            margin-bottom: 30px;
+            opacity: 0.6;
+        }
+        .nav-item {
+            padding: 10px 15px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-left: 2px solid transparent;
+        }
+        .nav-item:hover {
+            background: #1a0000;
+            border-left-color: #ff0000;
+        }
+        .nav-item.active {
+            background: #1a0000;
+            border-left-color: #ff0000;
+            opacity: 1;
+        }
+        .nav-item:not(.active) {
+            opacity: 0.6;
+        }
+        .nav-subkeys {
+            font-size: 12px;
+            margin-top: 5px;
+            padding-left: 10px;
+            opacity: 0.5;
+        }
+        .nav-item.active .nav-subkeys {
+            opacity: 0.7;
+        }
+        .nav-subkey {
+            padding: 3px 0;
+        }
+        .container {
+            margin-left: 250px;
+            padding: 40px 20px 40px 40px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .dict-start, .dict-end {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .section {
+            scroll-margin-top: 20px;
+        }
+        .key {
+            color: #ff0000;
+            margin-left: 20px;
+        }
+        .value {
+            color: #ff0000;
+            margin-left: 40px;
+        }
+        .nested {
+            margin-left: 40px;
+        }
+        .nested-deep {
+            margin-left: 60px;
+        }
+        a {
+            color: #ff0000;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #ff4444;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+            .container {
+                margin-left: 0;
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="sidebar">
+            <div class="sidebar-title"># Navigation</div>
+            <div class="nav-item" data-section="contact">
+                contact
+                <div class="nav-subkeys">
+                    <div class="nav-subkey">email</div>
+                    <div class="nav-subkey">linkedin</div>
+                    <div class="nav-subkey">portfolio</div>
+                    <div class="nav-subkey">bluesky</div>
+                    <div class="nav-subkey">resume</div>
+                </div>
+            </div>
+            <div class="nav-item" data-section="summary">summary</div>
+            <div class="nav-item" data-section="experience">
+                experience
+                <div class="nav-subkeys">
+                    <div class="nav-subkey">Machine Learning Engineer</div>
+                    <div class="nav-subkey">Machine Learning Engineer</div>
+                    <div class="nav-subkey">Data Scientist</div>
+                    <div class="nav-subkey">Research Assistant</div>
+                    <div class="nav-subkey">Data Science Intern</div>
+                    <div class="nav-subkey">AI Intern</div>
+                    <div class="nav-subkey">AI ML and Edge Computing Intern</div>
+                </div>
+            </div>
+            <div class="nav-item" data-section="education">
+                education
+                <div class="nav-subkeys">
+                    <div class="nav-subkey">University of Massachusetts Lowell</div>
+                    <div class="nav-subkey">VJTI</div>
+                </div>
+            </div>
+            <div class="nav-item" data-section="skills">
+                skills
+                <div class="nav-subkeys">
+                    <div class="nav-subkey">languages_and_frameworks</div>
+                    <div class="nav-subkey">applications</div>
+                    <div class="nav-subkey">other</div>
+                </div>
+            </div>
+            <div class="nav-item" data-section="projects">projects</div>
+        </div>
+
+        <div class="container">
+            <div class="dict-start">anveshak_rathore = {</div>
+            
+            <div class="key">"name": "Anveshak Rathore",</div>
+            <div class="key">"title": "Machine Learning Engineer @ iManage",</div>
+            <div class="key">"location": "Chicago, Illinois, United States",</div>
+            
+            <div id="contact" class="section">
+                <div class="key">"contact": {</div>
+                <div class="nested">"email": "<a href="mailto:rathoreanveshak@gmail.com">rathoreanveshak@gmail.com</a>",</div>
+                <div class="nested">"linkedin": "<a href="https://www.linkedin.com/in/anveshak-rathore/" target="_blank">linkedin.com/in/anveshak-rathore</a>",</div>
+                <div class="nested">"portfolio": "<a href="https://anveshakr.com" target="_blank">anveshakr.com</a>",</div>
+                <div class="nested">"bluesky": "<a href="https://bsky.app/profile/anveshakr.com" target="_blank">bsky.anveshakr.com</a>",</div>
+                <div class="nested">"resume": "<a href="https://drive.google.com/uc?export=download&id=1vxOd7LnhSSb4OB2a-RkkWmXVUSU2bpZW" target="_blank">download resume</a>"</div>
+                <div class="key">},</div>
+            </div>
+            
+            <div id="summary" class="section">
+                <div class="key">"summary": "Machine Learning Engineer at iManage. Researching, improving and deploying large scale applied AI/ML products. Always looking to learn and grow in my field.",</div>
+            </div>
+            
+            <div id="experience" class="section">
+                <div class="key">"experience": [</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "iManage",</div>
+                <div class="nested-deep">"role": "Machine Learning Engineer",</div>
+                <div class="nested-deep">"period": "July 2025 - Present",</div>
+                <div class="nested-deep">"description": "Applying traditional ML and state-of-the-art AI to customer metrics and feedback, uncovering patterns and opportunities to elevate client performance in their field."</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "iManage",</div>
+                <div class="nested-deep">"role": "Machine Learning Engineer",</div>
+                <div class="nested-deep">"period": "January 2025 - July 2025",</div>
+                <div class="nested-deep">"highlights": [</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Utilizing LLMs to analyze user feedback and uncover sentiment trends",</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Developing interactive Power BI dashboards for cross-functional teams",</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Scaling data processing pipelines for production deployment"</div>
+                <div class="nested-deep">]</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "iManage",</div>
+                <div class="nested-deep">"role": "Data Scientist",</div>
+                <div class="nested-deep">"period": "October 2024 - January 2025",</div>
+                <div class="nested-deep">"highlights": [</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Fine-tuned open-source text embedding model on legal data",</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Improved RAG pipelines for Ask iManage product",</div>
+                <div class="nested-deep" style="margin-left: 80px;">"Surpassed OpenAI's ADA on MTEB law retrieval benchmarks"</div>
+                <div class="nested-deep">]</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "University of Massachusetts Lowell",</div>
+                <div class="nested-deep">"role": "Research Assistant",</div>
+                <div class="nested-deep">"period": "January 2024 - May 2024",</div>
+                <div class="nested-deep">"description": "Developed hierarchical data-prioritization algorithm for AUV swarms with limited-bandwidth communication using Holo-Ocean and Python."</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "iManage",</div>
+                <div class="nested-deep">"role": "Data Science Intern",</div>
+                <div class="nested-deep">"period": "May 2023 - August 2023",</div>
+                <div class="nested-deep">"description": "Worked on AI Email Management System, leveraged PyTorch for feature expansion and LLM architecture optimization."</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "VJTI",</div>
+                <div class="nested-deep">"role": "AI Intern",</div>
+                <div class="nested-deep">"period": "June 2021 - September 2021",</div>
+                <div class="nested-deep">"description": "Created deep learning algorithm for film language conversion with audio transfer and GAN-based lip manipulation."</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"company": "AIRPIX",</div>
+                <div class="nested-deep">"role": "AI ML and Edge Computing Intern",</div>
+                <div class="nested-deep">"period": "June 2020 - December 2020",</div>
+                <div class="nested-deep">"description": "Built Computer Vision algorithm for social distancing and mask detection, optimized with C++ and Nvidia DeepStream for Jetson Nano deployment."</div>
+                <div class="nested">}</div>
+                <div class="key">],</div>
+            </div>
+            
+            <div id="education" class="section">
+                <div class="key">"education": [</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"institution": "University of Massachusetts Lowell",</div>
+                <div class="nested-deep">"degree": "Master of Science - Computer Science",</div>
+                <div class="nested-deep">"period": "September 2022 - May 2024"</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"institution": "VJTI",</div>
+                <div class="nested-deep">"degree": "Bachelor of Technology - Electronics Engineering",</div>
+                <div class="nested-deep">"period": "2018 - 2022"</div>
+                <div class="nested">}</div>
+                <div class="key">],</div>
+            </div>
+            
+            <div id="skills" class="section">
+                <div class="key">"skills": {</div>
+                <div class="nested">"languages_and_frameworks": ["Python", "C", "C++", "Java", "Arduino", "SQL", "Bash", "PowerShell", "Rust"],</div>
+                <div class="nested">"applications": ["PyTorch", "Machine Learning", "LLM fine tuning", "LangChain"],</div>
+                <div class="nested">"other": ["Docker", "MS Azure Suite", "Power BI", "Agile/Scrum", "Google Cloud Platform"]</div>
+                <div class="key">},</div>
+            </div>
+            
+            <div id="projects" class="section">
+                <div class="key">"projects": [</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"name": "Home Assistant AI",</div>
+                <div class="nested-deep">"description": "Custom home automation assistant using LangChain toolchains with STT and TTS.",</div>
+                <div class="nested-deep">"github": "<a href="https://github.com/AnveshakR/homeassistant-AI" target="_blank">github.com/AnveshakR/homeassistant-AI</a>"</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"name": "Breast Cancer Prediction from Mammograms",</div>
+                <div class="nested-deep">"description": "Detecting cancer tumors in mammogram DICOM images using autoencoders, mitigating negative class bias.",</div>
+                <div class="nested-deep">"github": "<a href="https://github.com/AnveshakR/Breast-Cancer-Prediction" target="_blank">github.com/AnveshakR/Breast-Cancer-Prediction</a>"</div>
+                <div class="nested">},</div>
+                <div class="nested">{</div>
+                <div class="nested-deep">"name": "Spotify Poster Generator",</div>
+                <div class="nested-deep">"description": "Generate custom Spotify album posters with a color bar derived from the album art colors.",</div>
+                <div class="nested-deep">"github": "<a href="https://github.com/AnveshakR/poster-generator" target="_blank">github.com/AnveshakR/poster-generator</a>"</div>
+                <div class="nested">}</div>
+                <div class="key">]</div>
+            </div>
+            
+            <div class="dict-end">}</div>
+        </div>
+    </div>
+
+    <script>
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navItems.forEach(item => item.classList.remove('active'));
+                    const activeNav = document.querySelector(`[data-section="${entry.target.id}"]`);
+                    if (activeNav) activeNav.classList.add('active');
+                }
+            });
+        }, { threshold: 0.3, rootMargin: '-20% 0px -20% 0px' });
+        
+        sections.forEach(section => observer.observe(section));
+        
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const section = document.getElementById(item.dataset.section);
+                section.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
